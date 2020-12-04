@@ -1,0 +1,9 @@
+name: tutorial
+
+conda_env: conda.yaml
+
+entry_points:
+  main:
+    parameters:
+      yearly_seasonality: {type: int, default: 20}
+    command: "python train.py {yearly_seasonality}"
